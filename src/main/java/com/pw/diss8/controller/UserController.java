@@ -52,7 +52,7 @@ public class UserController {
     }
 
     @DeleteMapping("/user")
-    public DataResult deletedUser(@RequestBody  List<String> userIds) {
+    public DataResult deletedUser(@RequestBody List<String> userIds) {
         LambdaQueryWrapper<SysUser> queryWrapper = Wrappers.lambdaQuery();
         queryWrapper.in(SysUser::getId, userIds);
         userService.remove(queryWrapper);

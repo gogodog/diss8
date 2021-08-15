@@ -17,7 +17,7 @@ public class IndexController {
 
     @GetMapping("/main")
     public String userList() {
-        return "main";
+        return "index";
     }
 
 }

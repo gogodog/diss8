@@ -1,13 +1,14 @@
 # springboot-diss8
 
 ## 介绍
-基于SpringBoot + Thymeleaf + Mybatis Plus 的springboot脚手架
-数据库支持 MySQL主流数据库  
+
+基于SpringBoot + Thymeleaf + Mybatis Plus 的springboot脚手架 数据库支持 MySQL主流数据库  
 后台接口RESTful 风格，支持前后端分离，可与app公用一套接口。  
 开发最精简，可当脚手架，适合你来 DIY  
 **如果喜欢，防止您迷路， 请尽快Star项目。多了您的支持，更多了一份动力！感谢~**
 
 ## 特征
+
 - 后台接口RESTful 风格，支持前后端分离，可与app公用一套接口
 - 统一响应结果封装及生成工具
 - 统一异常处理
@@ -17,6 +18,7 @@
 - 提供代码生成器(MySQL数据库)，生成从Html到Mapper
 
 ## 代码结构
+
 ```
 ├─main
 │  ├─java
@@ -53,22 +55,24 @@
 ```
 
 ## 开发建议
+
 - Model内成员变量建议与表字段数量对应，如需扩展成员变量（比如连表查询）建议创建VO，否则需在扩展的成员变量上加@TableField(exist = false)
-- 建议业务失败直接使用throw new BusinessException("ErrorMessage")抛出，由统一异常处理器来封装业务失败的响应结果，会直接被封装为{"code":500002,"message":"ErrorMessage"}返回，尽情抛出；
+- 建议业务失败直接使用throw new BusinessException("ErrorMessage")抛出，由统一异常处理器来封装业务失败的响应结果，会直接被封装为{"code":500002,"message":"
+  ErrorMessage"}返回，尽情抛出；
 
 ## 使用说明
+
 - 使用IDE导入本项目，IDE需要安装lombok插件
 - 创建数据库, 导入mysql.sql
 - 配置application-dev.yml中的数据库连接
 - 运行项目
-   - 直接运行Diss8Application.java
-   - 项目根目录下执行mvn -X clean package -Dmaven.test.skip=true编译打包，然后执行java -jar diss8.jar
+    - 直接运行Diss8Application.java
+    - 项目根目录下执行mvn -X clean package -Dmaven.test.skip=true编译打包，然后执行java -jar diss8.jar
 - 页面测试地址 http://localhost:8080/diss/main
 - 接口测试地址 http://localhost:8080/sys/users?username=admin
-	
-
 
 ## 技术文档
+
 * 核心框架：[Spring Boot](https://spring.io/projects/spring-boot)
 * 持久层框架：[MyBatis-Plus](https://mybatis.plus)
 * 分页：[Page](https://mybatis.plus/guide/page.html)
@@ -77,12 +81,14 @@
 * 阿里巴巴Java开发手册[最新版下载](https://github.com/alibaba/p3c)
 
 ## 参与贡献
+
 1. Fork 本项目
 2. 新建 feature_xxx 分支
 3. 提交代码
 4. 提交 Pull Request
 
 ### 捐赠
+
 > 项目的发展离不开您的支持， 如果您够宽裕，请作者喝杯咖啡吧！  
 备注开源
 

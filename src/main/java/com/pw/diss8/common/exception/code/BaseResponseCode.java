@@ -16,8 +16,7 @@ public enum BaseResponseCode implements ResponseCodeInterface {
     SYSTEM_BUSY(500001, "系统繁忙，请稍候再试"),
     OPERATION_ERRO(500002, "操作失败"),
     DATA_ERROR(401003, "传入数据异常"),
-    METHOD_ARGUMENT_NOT_VALID_EXCEPTION(401007, "方法参数校验异常")
-    ;
+    METHOD_ARGUMENT_NOT_VALID_EXCEPTION(401007, "方法参数校验异常");
 
     /**
      * 错误码

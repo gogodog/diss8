@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="154" height="162">
+    <g fill="none" fill-rule="evenodd">
+        <path fill="currentColor" fill-rule="nonzero"
+              d="M152.778 108.501C141.518 139.7 111.646 162 76.566 162c-35.08 0-64.952-22.3-76.212-53.499h1.064C12.633 139.136 42.046 161 76.566 161c34.52 0 63.933-21.864 75.148-52.499zM76.566 0c35.454 0 65.589 22.779 76.566 54.5h-1.06C141.139 23.343 111.462 1 76.567 1S11.994 23.342 1.059 54.5H0C10.977 22.78 41.111 0 76.566 0z"/>
+        <path stroke="currentColor" stroke-linecap="square" d="M55 110V52l44 29z"/>
+    </g>
+</svg>

@@ -27,7 +27,7 @@ public class Diss8ApplicationTests {
         user.setUsername("admin");
         IPage<SysUser> list = this.userService.pageInfo(user);
         log.info(JSON.toJSONString(list));
-        Assert.assertFalse(1==1);
+        Assert.assertFalse(1 == 1);
     }
 
 }
